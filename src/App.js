@@ -1,25 +1,20 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
+// import ChatMessages from "./components/ChatMessages";
+
+// Material UI
+import { Container, Grid } from '@mui/material';
+
+import ChatHeader from "./components/ChatHeader";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+return (
+    <Container maxWidth="sm" sx={{ pt: 2 }}>
+      <ChatHeader />
+    </Container>
+)
+
 }
 
 export default App;
